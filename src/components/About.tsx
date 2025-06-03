@@ -1,6 +1,7 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Code, Globe, PenTool, Lightbulb, Camera } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Code, Globe, PenTool, Lightbulb, Camera } from "lucide-react";
+import codingImg from "../../assests/projects/coding.jpg";
 
 const container = {
   hidden: { opacity: 0 },
@@ -42,7 +43,7 @@ const About = () => {
             <div className="relative">
               <div className="aspect-square overflow-hidden rounded-2xl bg-gradient-to-br from-primary-900 to-background-dark border-2 border-primary-700/30">
                 <img
-                  src="./assests/projects/coding.jpg"
+                  src={codingImg}
                   alt="Profile"
                   className="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-300"
                 />
@@ -61,18 +62,18 @@ const About = () => {
             <motion.h3 variants={item} className="text-2xl mb-4 gradient-text">
               Creative Developer & Designer
             </motion.h3>
-            
+
             <motion.p variants={item} className="text-gray-300 mb-6">
-              I'm a full-stack developer with 3 years of experience in creating modern, responsive, and user-friendly websites. 
-              I love blending creativity with code to build meaningful digital experiences.
+              I'm a full-stack developer with 3 years of experience in creating
+              modern, responsive, and user-friendly websites. I love blending
+              creativity with code to build meaningful digital experiences.
             </motion.p>
-            
+
             <motion.p variants={item} className="text-gray-300 mb-8">
-              I work with React, Node.js, Express, MongoDB, and MySQL.
-               I’m also skilled in graphic design (GIMP, Canva, Photoshop, CorelDRAW), SEO,
-                and video editing — offering complete web and branding solutions.
-
-
+              I work with React, Node.js, Express, MongoDB, and MySQL. I’m also
+              skilled in graphic design (GIMP, Canva, Photoshop, CorelDRAW),
+              SEO, and video editing — offering complete web and branding
+              solutions.
             </motion.p>
 
             <motion.div variants={container} className="grid grid-cols-2 gap-4">
